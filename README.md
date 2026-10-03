@@ -1,6 +1,6 @@
 # Mohanned Al Alshaikh Portfolio
 
-Static portfolio website for Mohanned Al Alshaikh, Data and Business Analyst.
+Static portfolio website for Mohanned Al Alshaikh, Data and Business Intelligence Analyst.
 
 ## Local preview
 

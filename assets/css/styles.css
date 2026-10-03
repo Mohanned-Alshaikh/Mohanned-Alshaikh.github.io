@@ -724,6 +724,45 @@ h1, h2, h3 { color: #f5f5f2; }
 .case-copy h2, .case-copy h3 { color: #f5f5f2; }
 .case-copy h2 { font-size: clamp(2.2rem, 4.5vw, 4.3rem); line-height: 0.98; }
 .case-copy strong { color: #fff; }
+.case-copy > p:not(.disclosure):not(.key-takeaway) { max-width: 72ch; }
+
+.key-takeaway {
+  padding: 22px 24px;
+  color: #fff4df;
+  background: linear-gradient(120deg, rgba(157, 80, 55, 0.28), rgba(221, 169, 95, 0.08));
+  border: 1px solid #4a3329;
+  border-left: 4px solid #dda95f;
+  border-radius: 0 14px 14px 0;
+  font-size: clamp(1.08rem, 2vw, 1.34rem);
+  font-weight: 750;
+  line-height: 1.42;
+}
+
+.supporting-detail {
+  color: #8e8e8e;
+  font-size: 0.94rem;
+}
+
+.scan-list {
+  margin: 26px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+}
+
+.scan-list li {
+  padding: 17px 18px;
+  background: #101010;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+}
+
+.scan-list strong,
+.scan-list span { display: block; }
+.scan-list strong { color: #fff; font-size: 0.96rem; }
+.scan-list span { margin-top: 5px; color: #999; font-size: 0.88rem; line-height: 1.48; }
 .insight { background: #101010; border: 1px solid #2a2a2a; }
 .insight strong { color: #fff; }
 .insight span { color: #aaa; }
@@ -758,6 +797,7 @@ h1, h2, h3 { color: #f5f5f2; }
   .about-grid h2 { font-size: clamp(3rem, 14vw, 4.3rem); }
   .project-hero h1 { font-size: clamp(3.2rem, 15vw, 5.2rem); }
   .project-hero { padding-block: 55px 66px; }
+  .scan-list { grid-template-columns: 1fr; }
 }
 
 /* Image-led case study refinements */
